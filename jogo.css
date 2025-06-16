@@ -1,0 +1,75 @@
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2em;
+  color: #2c3e50;
+}
+
+h3 {
+  font-weight: normal;
+  margin-bottom: 1.5em;
+  color: #34495e;
+}
+
+input[type="number"] {
+  width: 240px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 1em;
+}
+
+input[type="number"]:focus {
+  border-color: #2980b9;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 10px 20px 0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#message {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  min-height: 2em;
+  color: #e74c3c; /* red-ish for errors and messages */
+  font-weight: 600;
+  text-align: center;
+  max-width: 280px;
+}
+
+/* Container to keep input and buttons nicely aligned */
+body > * {
+  max-width: 320px;
+  width: 100%;
+}
